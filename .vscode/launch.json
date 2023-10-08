@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "move-lint Detector1",
+            "cargo": {
+                "args": [
+                    "build",
+                ]
+            },
+            "args": [
+                "-p",
+                "${workspaceFolder}/tests/cases/Detector1"
+            ],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "move-lint test",
+            "cargo": {
+                "args": [
+                    "test",
+                ]
+            },
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
